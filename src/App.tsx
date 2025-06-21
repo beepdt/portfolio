@@ -1,9 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import Homepage from "./pages/Homepage/Homepage";
-import Projects from "./pages/Projectpage/Projects";
 import NewProjects from "./pages/Projectpage/NewProjects";
 import { useEffect, useRef } from "react";
-import ReactLenis, { useLenis, type LenisRef } from "lenis/react";
+import  { useLenis, type LenisRef } from "lenis/react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
