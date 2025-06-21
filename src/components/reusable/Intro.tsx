@@ -4,7 +4,7 @@ import Copy from "@/components/reusable/Copy";
 import { useCallback, useEffect, useRef } from "react";
 import CopyChars from "./CopyChars";
 
-import { ReactLenis } from "lenis/react";
+
 
 interface NavbarProps {
   activeSection: string;
@@ -156,9 +156,7 @@ export const Intro = ({ activeSection, onSectionClick }: NavbarProps) => {
               <a
                 key={link.label}
                 href={link.href}
-                target={link.download ? "_self" : "_blank"}
-                rel={!link.download ? "noopener noreferrer" : undefined}
-                download={link.download}
+                
                 aria-label={link.label}
               >
                 <div className="flex cursor-pointer items-center justify-center  hover:text-[#1e1e1e] transition-colors border rounded-full p-4 hover:bg-[#f5f5f5] xl:size-24">

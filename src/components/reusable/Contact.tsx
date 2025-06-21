@@ -8,13 +8,14 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { useState } from "react";
-import { useNavigate } from "react-router";
-import Copy from "@/components/reusable/Copy";
+
+
 import CopyChars from "./CopyChars";
 
 export const Contact = () => {
   const [copiedEmail, setCopiedEmail] = useState(false);
-  const [hoveredCard, setHoveredCard] = useState<string | null>(null);
+  
+  
 
   const socialLinks = [
     {
@@ -51,7 +52,7 @@ export const Contact = () => {
       description: "Download PDF",
     },
   ];
-  const navigate = useNavigate();
+  
 
   const handleEmailCopy = async (email: string) => {
     try {
@@ -86,8 +87,7 @@ export const Contact = () => {
           <div
             key={link.label}
             className="group relative overflow-hidden rounded-2xl bg-[#1d1c1c]/30 hover:border-gray-400 transition-all duration-300 hover:shadow-lg cursor-pointer"
-            onMouseEnter={() => setHoveredCard(link.label)}
-            onMouseLeave={() => setHoveredCard(null)}
+            
             onClick={() => handleCardClick(link)}
             style={{
               animationDelay: `${index * 100}ms`,
@@ -113,11 +113,8 @@ export const Contact = () => {
                       className="p-2   rounded-full transition-colors duration-200"
                       title="Copy email"
                     >
-                      {copiedEmail ? (
-                        <Check className="size-4 text-gray-700" />
-                      ) : (
-                        <Copy className="size-4 text-gray-700" />
-                      )}
+                      
+                      
                     </button>
                   )}
 

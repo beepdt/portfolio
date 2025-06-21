@@ -6,7 +6,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-import { useEffect } from "react";
 import Copy from "./Copy";
 export const NewProjects = () => {
   const navigate = useNavigate();

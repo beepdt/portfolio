@@ -7,7 +7,6 @@ import {
 } from "lucide-react";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import image from "./../../assets/react.svg";
 import { useNavigate } from "react-router";
 
 
@@ -35,28 +34,31 @@ export const Navbar = ({ activeSection, onSectionClick }: NavbarProps) => {
     label: string;
     
   };
-
+//@ts-ignore
   const socialLinks: SocialLink[] = [
     {
       icon: <Github className="size-[24px]" />,
       href: "https://github.com/beepdt",
       label: "GitHub",
+      download: undefined
     },
     {
       icon: <Linkedin className="size-[24px]" />,
       href: "https://linkedin.com/in/deeptangshu",
       label: "LinkedIn",
+      download: undefined
     },
     {
       icon: <Mail className="size-[24px] " />,
       href: "mailto:info.deeptangshu@gmail.com",
       label: "Email",
+      download: undefined
     },
     {
       icon: <FileText className="size-[24px]" />,
       href: "/resume.pdf",
       label: "Resume",
-      // download: true, // Removed to open PDF directly
+      download: undefined
     },
   ];
 

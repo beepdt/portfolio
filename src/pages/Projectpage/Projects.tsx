@@ -1,6 +1,4 @@
 import image1 from "./../../assets/img/app_1_1.png";
-import image2 from "./../../assets/img/app_1_2.png";
-import image3 from "./../../assets/img/app_1_3.png";
 import "./projects.css";
 import { galleryItems } from "./data";
 import { gsap } from "gsap";

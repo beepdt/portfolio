@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import image1 from "@/assets/img/app_1_1.png";
 import image2 from "@/assets/img/app_1_2.png";
 import image3 from "@/assets/img/app_1_3.png";
@@ -6,7 +6,7 @@ import video1 from "@/assets/videos/5_25_2025_20_55_13_contentcore.xyz.webm"
 import { HoverCard } from "./HoverCard";
 import { motion } from "motion/react"
 import { useNavigate } from "react-router";
-import Copy from "./Copy";
+
 import CopyChars from "./CopyChars";
 const projects = [
   {
@@ -36,7 +36,7 @@ export const Projects = () => {
   );
   const [colCount, setColCount] = useState( typeof window !== 'undefined' && window.innerWidth < 1350 ? 1 : 3); //1 column for mobile 2 for larger screens
 
-  const containerRef = useRef<HTMLDivElement>(null);
+  
 
   const rowCount = 1;
 
