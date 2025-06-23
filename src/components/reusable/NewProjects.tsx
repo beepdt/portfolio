@@ -101,11 +101,10 @@ export const NewProjects = () => {
             </Copy>
             <Copy delay={0.1}>
               <p className="font-generalmed text-[16px]">
-                A full-stack web application built with Next.js and Supabase
-                that allows users to create, edit, and manage professional
-                resumes. Features include real-time autosave, PDF export, and an
-                integrated ATS score checker to optimize resumes for job
-                applications.
+                A full-stack application using Next.js and Supabase
+                allowing users to create, edit, and manage professional
+                resumes with PDF export and an
+               ATS score checker
               </p>
             </Copy>
             <div className="flex gap-2">
@@ -147,10 +146,9 @@ export const NewProjects = () => {
             </Copy>
             <Copy delay={0.1}>
               <p className="font-generalmed text-[16px]">
-                A modern Android note-taking app featuring category
+                An Android note-taking app featuring category
                 organization, bookmarking, and light/dark mode support. Built
-                with RoomDB for local data persistence, it offers a smooth and
-                responsive offline experience with a clean, user-friendly UI
+                with RoomDB for local data persistence.
               </p>
             </Copy>
             <div className="flex gap-2">
@@ -185,9 +183,8 @@ export const NewProjects = () => {
             <Copy delay={0.1}>
               <p className="font-generalmed text-[16px]">
                 An Android calculator app with a custom-designed UI, built using
-                MVVM architecture. Implements the Shunting Yard Algorithm for
-                accurate expression parsing and evaluation, ensuring reliable
-                calculation of complex arithmetic expressions
+                MVVM architecture. Uses Shunting Yard Algorithm for
+                accurate expression parsing and evaluation.
               </p>
             </Copy>
             <div className="flex gap-2">
