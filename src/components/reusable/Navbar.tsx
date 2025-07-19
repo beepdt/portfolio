@@ -44,7 +44,7 @@ export const Navbar = ({ activeSection, onSectionClick }: NavbarProps) => {
     },
     {
       icon: <Linkedin className="size-[24px]" />,
-      href: "https://linkedin.com/in/deeptangshu",
+      href: "https://www.linkedin.com/in/deeptangshubhattacharjee/",
       label: "LinkedIn",
       download: undefined
     },
